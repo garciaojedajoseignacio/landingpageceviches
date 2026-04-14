@@ -25,7 +25,6 @@
       --max:1220px;
       --transition:180ms cubic-bezier(.16,1,.3,1);
     }
-
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
@@ -36,15 +35,12 @@
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
     }
-
     img{display:block;max-width:100%;height:auto}
     a{text-decoration:none;color:inherit}
-
     .container{
       width:min(var(--max), calc(100% - 32px));
       margin:0 auto;
     }
-
     .topbar{
       position:sticky;
       top:0;
@@ -53,7 +49,6 @@
       backdrop-filter:blur(12px);
       border-bottom:1px solid var(--line);
     }
-
     .nav{
       display:flex;
       justify-content:space-between;
@@ -61,13 +56,11 @@
       gap:16px;
       padding:14px 0;
     }
-
     .brand{
       display:flex;
       align-items:center;
       gap:12px;
     }
-
     .brand-mark{
       width:44px;
       height:44px;
@@ -79,14 +72,12 @@
       font-size:18px;
       font-weight:900;
     }
-
     .brand-text strong{
       display:block;
       font-size:.98rem;
       line-height:1;
       letter-spacing:-.3px;
     }
-
     .brand-text span{
       display:block;
       margin-top:4px;
@@ -94,13 +85,11 @@
       font-size:.86rem;
       font-weight:700;
     }
-
     .nav-links{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
     }
-
     .nav-links a{
       padding:10px 14px;
       border-radius:999px;
@@ -108,26 +97,22 @@
       font-weight:700;
       transition:all var(--transition);
     }
-
     .nav-links a:hover{
       background:#111;
       color:#fff;
     }
-
     .hero{
       padding:42px 0 34px;
       background:
         radial-gradient(circle at left top, rgba(0,0,0,.04), transparent 20%),
         linear-gradient(180deg, #fff 0%, #fafafa 100%);
     }
-
     .hero-grid{
       display:grid;
       grid-template-columns:1.06fr .94fr;
       gap:22px;
       align-items:stretch;
     }
-
     .hero-copy{
       background:var(--black);
       color:var(--white);
@@ -140,7 +125,6 @@
       position:relative;
       overflow:hidden;
     }
-
     .hero-copy::before{
       content:"";
       position:absolute;
@@ -151,7 +135,6 @@
       top:-120px;
       right:-100px;
     }
-
     .eyebrow{
       display:inline-flex;
       align-items:center;
@@ -166,25 +149,21 @@
       font-weight:800;
       margin-bottom:22px;
     }
-
     h1,h2{
       margin:0 0 14px;
       letter-spacing:-1.6px;
       line-height:.92;
     }
-
     h1{
       font-size:clamp(3rem, 7vw, 6.6rem);
       font-family:'Playfair Display',serif;
       font-weight:800;
     }
-
     h2{
       font-size:clamp(2rem, 3vw, 3.3rem);
       font-family:'Playfair Display',serif;
       font-weight:800;
     }
-
     .lead{
       margin:0 0 26px;
       color:rgba(255,255,255,.76);
@@ -192,14 +171,12 @@
       max-width:58ch;
       font-size:1.04rem;
     }
-
     .cta-row{
       display:flex;
       gap:12px;
       flex-wrap:wrap;
       margin-bottom:22px;
     }
-
     .btn{
       min-height:50px;
       padding:14px 20px;
@@ -211,54 +188,45 @@
       transition:all var(--transition);
       border:1px solid transparent;
     }
-
     .btn-primary{
       background:#25D366;
       color:#111;
     }
-
     .btn-primary:hover{
       transform:translateY(-1px);
       background:#1fbe5d;
     }
-
     .btn-outline{
       background:transparent;
       color:#fff;
       border-color:rgba(255,255,255,.16);
     }
-
     .btn-outline:hover{
       background:rgba(255,255,255,.08);
     }
-
     .hero-bottom{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:10px;
       margin-top:22px;
     }
-
     .hero-stat{
       background:rgba(255,255,255,.06);
       border:1px solid rgba(255,255,255,.08);
       border-radius:20px;
       padding:14px;
     }
-
     .hero-stat strong{
       display:block;
       color:#fff;
       margin-bottom:4px;
       font-size:1rem;
     }
-
     .hero-stat span{
       color:rgba(255,255,255,.68);
       font-size:.92rem;
       line-height:1.55;
     }
-
     .hero-visual{
       border-radius:38px;
       overflow:hidden;
@@ -271,7 +239,6 @@
       padding:28px;
       isolation:isolate;
     }
-
     .hero-visual::before{
       content:"";
       position:absolute;
@@ -283,7 +250,6 @@
       z-index:-2;
       transform:scale(1.03);
     }
-
     .hero-visual::after{
       content:"";
       position:absolute;
@@ -293,7 +259,6 @@
         linear-gradient(135deg, rgba(0,0,0,.10), rgba(0,0,0,.35));
       z-index:-1;
     }
-
     .floating-card{
       width:min(360px, 100%);
       background:rgba(255,255,255,.94);
@@ -302,7 +267,6 @@
       padding:20px;
       box-shadow:var(--shadow);
     }
-
     .floating-card small{
       display:block;
       color:#555;
@@ -312,47 +276,39 @@
       letter-spacing:.08em;
       font-size:.75rem;
     }
-
     .floating-card strong{
       display:block;
       font-size:1.5rem;
       margin-bottom:10px;
       line-height:1.05;
     }
-
     .floating-card p{
       margin:0;
       color:#666;
       line-height:1.7;
     }
-
     section{
       padding:28px 0 74px;
     }
-
     .section-copy{
       color:var(--muted);
       line-height:1.8;
       max-width:68ch;
       margin:0 0 22px;
     }
-
     .dark-section{
       background:#0b0b0b;
       color:#fff;
       padding:82px 0;
     }
-
     .dark-section .section-copy{
       color:rgba(255,255,255,.70);
     }
-
     .cards{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:16px;
     }
-
     .card{
       border-radius:28px;
       padding:24px;
@@ -361,17 +317,14 @@
       box-shadow:var(--shadow);
       transition:transform var(--transition), border-color var(--transition);
     }
-
     .card:hover{
       transform:translateY(-3px);
     }
-
     .dark-card{
       background:#111;
       border:1px solid var(--line-strong);
       box-shadow:none;
     }
-
     .icon-box{
       width:56px;
       height:56px;
@@ -383,35 +336,29 @@
       background:#111;
       color:#fff;
     }
-
     .dark-card .icon-box{
       background:#fff;
       color:#111;
     }
-
     .card h3{
       margin:0 0 10px;
       font-size:1.15rem;
       letter-spacing:-.2px;
     }
-
     .card p{
       margin:0;
       line-height:1.75;
       color:var(--muted);
     }
-
     .dark-card p{
       color:rgba(255,255,255,.68);
     }
-
     .menu-layout{
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:16px;
       margin-top:8px;
     }
-
     .menu-card{
       background:#fff;
       border:1px solid var(--line);
@@ -419,12 +366,10 @@
       padding:24px;
       box-shadow:var(--shadow);
     }
-
     .menu-card h3{
       margin:0 0 14px;
       font-size:1.2rem;
     }
-
     .menu-item{
       display:flex;
       justify-content:space-between;
@@ -432,37 +377,31 @@
       padding:15px 0;
       border-bottom:1px solid var(--line);
     }
-
     .menu-item:last-child{
       border-bottom:none;
       padding-bottom:0;
     }
-
     .menu-item strong{
       display:block;
       margin-bottom:4px;
       font-size:1rem;
     }
-
     .menu-item span{
       color:var(--muted);
       font-size:.95rem;
       line-height:1.65;
     }
-
     .price{
       white-space:nowrap;
       font-weight:900;
       font-size:1rem;
     }
-
     .split{
       display:grid;
       grid-template-columns:.92fr 1.08fr;
       gap:18px;
       align-items:stretch;
     }
-
     .photo-panel{
       min-height:520px;
       border-radius:34px;
@@ -471,7 +410,6 @@
       background:#111;
       box-shadow:var(--shadow);
     }
-
     .photo-panel::before{
       content:"";
       position:absolute;
@@ -481,7 +419,6 @@
         url('https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
       transform:scale(1.03);
     }
-
     .photo-note{
       position:absolute;
       left:24px;
@@ -492,19 +429,16 @@
       padding:18px;
       box-shadow:var(--shadow);
     }
-
     .photo-note strong{
       display:block;
       margin-bottom:6px;
       font-size:1.05rem;
     }
-
     .photo-note p{
       margin:0;
       color:#666;
       line-height:1.7;
     }
-
     .contact-card{
       border-radius:34px;
       background:#fff;
@@ -512,14 +446,12 @@
       padding:28px;
       box-shadow:var(--shadow);
     }
-
     .info-grid{
       display:grid;
       grid-template-columns:repeat(2,1fr);
       gap:12px;
       margin-top:20px;
     }
-
     .info-box{
       border-radius:20px;
       background:#fafafa;
@@ -527,19 +459,16 @@
       padding:16px;
       line-height:1.7;
     }
-
     .info-box strong{
       display:block;
       margin-bottom:4px;
     }
-
     .big-cta{
       margin-top:18px;
       display:flex;
       gap:12px;
       flex-wrap:wrap;
     }
-
     .closing{
       background:#111;
       color:#fff;
@@ -549,7 +478,6 @@
       overflow:hidden;
       position:relative;
     }
-
     .closing::before{
       content:"";
       position:absolute;
@@ -559,7 +487,6 @@
       border-radius:50%;
       background:radial-gradient(circle, rgba(255,255,255,.08), rgba(255,255,255,0));
     }
-
     .closing p{
       max-width:60ch;
       margin:12px auto 22px;
@@ -567,14 +494,12 @@
       line-height:1.8;
       position:relative;
     }
-
     footer{
       padding:18px 0 46px;
       text-align:center;
       color:var(--muted);
       font-size:.95rem;
     }
-
     @media (max-width: 980px){
       .hero-grid,
       .cards,
@@ -583,18 +508,15 @@
       .info-grid{
         grid-template-columns:1fr;
       }
-
       .nav{
         flex-direction:column;
         align-items:flex-start;
       }
-
       .hero-copy,
       .hero-visual,
       .photo-panel{
         min-height:auto;
       }
-
       .hero-bottom{
         grid-template-columns:1fr;
       }
@@ -611,7 +533,6 @@
           <span>Negro, blanco y sabor fresco</span>
         </div>
       </a>
-
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#destacados">Destacados</a>
         <a href="#menu">Menú</a>
@@ -625,26 +546,24 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <div>
-            <div class="eyebrow">Pedidos por WhatsApp · Retiro y delivery</div>
+            <div class="eyebrow">Pedidos por WhatsApp • Delivery $2.000 • 12:00 a 22:00</div>
             <h1>El sabor del mar, servido en Osorno.</h1>
             <p class="lead">
               En Ceviches Osorno preparamos ceviches frescos, intensos y bien servidos, con ese equilibrio entre acidez, frescura y carácter que hace que quieras volver. Una propuesta directa, sabrosa y hecha para quienes buscan comer bien, pedir rápido y disfrutar sin vueltas.
             </p>
-
             <div class="cta-row">
               <a class="btn btn-primary" href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer">Pedir ahora</a>
               <a class="btn btn-outline" href="#menu">Ver menú</a>
             </div>
           </div>
-
           <div class="hero-bottom">
             <div class="hero-stat">
               <strong>Frescura real</strong>
               <span>Cada plato busca resaltar el sabor natural del pescado, el limón y los ingredientes bien preparados.</span>
             </div>
             <div class="hero-stat">
-              <strong>Atención rápida</strong>
-              <span>Haz tu pedido en pocos pasos y recibe respuesta directa por WhatsApp.</span>
+              <strong>Atención por WhatsApp</strong>
+              <span>Te respondemos entre las 12:00 y 22:00. Pedidos rápidos y directos.</span>
             </div>
             <div class="hero-stat">
               <strong>Hecho para antojar</strong>
@@ -652,7 +571,6 @@
             </div>
           </div>
         </div>
-
         <div class="hero-visual">
           <div class="floating-card">
             <small>Recomendado</small>
@@ -669,20 +587,17 @@
         <p class="section-copy">
           Aquí todo gira en torno al sabor, la frescura y una experiencia directa. Desde el primer vistazo la idea es simple: ver, antojarse y pedir.
         </p>
-
         <div class="cards">
           <article class="card dark-card">
             <div class="icon-box">✦</div>
             <h3>Ingredientes frescos</h3>
             <p>Sabores limpios, combinaciones precisas y platos preparados para lucirse en cada pedido.</p>
           </article>
-
           <article class="card dark-card">
             <div class="icon-box">✦</div>
             <h3>Preparación al momento</h3>
             <p>La gracia del ceviche está en su frescura, por eso cada orden busca mantener textura, aroma y carácter.</p>
           </article>
-
           <article class="card dark-card">
             <div class="icon-box">✦</div>
             <h3>Sabor que se recuerda</h3>
@@ -698,11 +613,9 @@
         <p class="section-copy">
           Nuestra carta reúne preparaciones frescas, sabrosas y pensadas para distintos gustos. Desde opciones clásicas hasta combinaciones más intensas, aquí todo está hecho para disfrutar el mar con personalidad.
         </p>
-
         <div class="menu-layout">
           <article class="menu-card">
             <h3>Ceviches</h3>
-
             <div class="menu-item">
               <div>
                 <strong>Ceviche clásico</strong>
@@ -710,7 +623,6 @@
               </div>
               <div class="price">$8.990</div>
             </div>
-
             <div class="menu-item">
               <div>
                 <strong>Ceviche mixto</strong>
@@ -718,7 +630,6 @@
               </div>
               <div class="price">$10.990</div>
             </div>
-
             <div class="menu-item">
               <div>
                 <strong>Ceviche premium</strong>
@@ -727,10 +638,8 @@
               <div class="price">$12.990</div>
             </div>
           </article>
-
           <article class="menu-card">
             <h3>Acompañamientos</h3>
-
             <div class="menu-item">
               <div>
                 <strong>Leche de tigre</strong>
@@ -738,7 +647,6 @@
               </div>
               <div class="price">$3.500</div>
             </div>
-
             <div class="menu-item">
               <div>
                 <strong>Chicharrón de pescado</strong>
@@ -746,7 +654,6 @@
               </div>
               <div class="price">$7.990</div>
             </div>
-
             <div class="menu-item">
               <div>
                 <strong>Bebidas</strong>
@@ -767,17 +674,20 @@
             <p>Cada plato está pensado para verse tan bien como sabe, con presentaciones limpias, frescura visible y una identidad que invita a pedir.</p>
           </div>
         </div>
-
         <article class="contact-card" id="contacto">
           <h2>Contacto y pedidos</h2>
           <p class="section-copy">
-            Haz tu pedido de forma rápida, consulta disponibilidad o escríbenos directamente para resolver dudas. Queremos que pedir sea tan simple como elegir lo que se te antojó.
+            Pedidos por WhatsApp • Retiro en local y delivery.<br><br>
+            <strong>Delivery:</strong> $2.000 adicional<br>
+            <strong>Horario de atención:</strong> 12:00 a 22:00<br>
+            <strong>Medios de pago:</strong> Efectivo o transferencia.<br>
+            Idealmente la transferencia antes de preparar el pedido, pero si es tu primera vez también aceptamos al momento de entregar.
           </p>
-
           <div class="info-grid">
             <div class="info-box">
               <strong>WhatsApp</strong>
-              +56 9 1234 5678
+              +56 9 1234 5678<br>
+              <small>Pedidos y consultas • 12:00 a 22:00</small>
             </div>
             <div class="info-box">
               <strong>Instagram</strong>
@@ -789,10 +699,10 @@
             </div>
             <div class="info-box">
               <strong>Horario</strong>
-              Lun a Dom · 12:30 a 22:30
+              Por WhatsApp: 12:00 pm - 22:00 pm<br>
+              <small>(Podemos tener imprevistos, siempre confirma por mensaje)</small>
             </div>
           </div>
-
           <div class="big-cta">
             <a class="btn btn-primary" href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
             <a class="btn btn-outline" style="background:#111;color:#fff;border-color:#111;" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
@@ -806,7 +716,8 @@
         <div class="closing">
           <h2>Haz tu pedido y disfruta algo realmente fresco.</h2>
           <p>
-            En Ceviches Osorno queremos que cada visita termine en una buena elección: sabor marino, preparación cuidada y una atención rápida para que solo te preocupes de disfrutar.
+            Escríbenos por WhatsApp entre las 12:00 y 22:00. Delivery por $2.000 adicional. 
+            Aceptamos efectivo o transferencia. Te preparamos tu ceviche al momento con los ingredientes más frescos.
           </p>
           <a class="btn btn-primary" href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer">Escribir ahora</a>
         </div>
