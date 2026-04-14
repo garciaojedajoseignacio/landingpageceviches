@@ -304,55 +304,69 @@
     .dark-section .section-copy{
       color:rgba(255,255,255,.70);
     }
+   
+
+
+
+
     .cards{
       display:grid;
       grid-template-columns:repeat(3,1fr);
-      gap:16px;
+      gap:24px;
     }
     .card{
-      border-radius:28px;
-      padding:24px;
+      border-radius:32px;
+      padding:32px 28px;
       border:1px solid var(--line);
       background:#fff;
       box-shadow:var(--shadow);
-      transition:transform var(--transition), border-color var(--transition);
+      transition:all var(--transition);
     }
     .card:hover{
-      transform:translateY(-3px);
+      transform:translateY(-8px);
+      box-shadow:0 25px 60px rgba(0,0,0,.15);
     }
     .dark-card{
       background:#111;
-      border:1px solid var(--line-strong);
+      border:1px solid rgba(255,255,255,.10);
       box-shadow:none;
     }
     .icon-box{
-      width:56px;
-      height:56px;
-      border-radius:18px;
+      width:72px;
+      height:72px;
+      border-radius:22px;
       display:grid;
       place-items:center;
-      margin-bottom:14px;
-      font-size:24px;
-      background:#111;
+      margin-bottom:20px;
+      font-size:32px;
+      background:#1a1a1a;
       color:#fff;
+      transition:all var(--transition);
     }
     .dark-card .icon-box{
-      background:#fff;
-      color:#111;
+      background:#222;
+      color:#fff;
+    }
+    .dark-card:hover .icon-box{
+      background:#333;
+      transform:scale(1.08);
     }
     .card h3{
-      margin:0 0 10px;
-      font-size:1.15rem;
-      letter-spacing:-.2px;
+      margin:0 0 14px;
+      font-size:1.32rem;
+      letter-spacing:-0.4px;
+      font-weight:700;
     }
     .card p{
       margin:0;
-      line-height:1.75;
+      line-height:1.78;
       color:var(--muted);
     }
     .dark-card p{
-      color:rgba(255,255,255,.68);
+      color:rgba(255,255,255,.78);
     }
+
+    /* Mantengo el menú sin cambios (como lo tenías) */
     .menu-layout{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -370,6 +384,10 @@
       margin:0 0 14px;
       font-size:1.2rem;
     }
+
+
+
+    
     .menu-item{
       display:flex;
       justify-content:space-between;
@@ -581,27 +599,30 @@
       </div>
     </section>
 
-    <section id="destacados" class="dark-section">
+           <section id="destacados" class="dark-section">
       <div class="container">
         <h2>Lo que hace especial a Ceviches Osorno</h2>
         <p class="section-copy">
-          Aquí todo gira en torno al sabor, la frescura y una experiencia directa. Desde el primer vistazo la idea es simple: ver, antojarse y pedir.
+          Frescura, sabor intenso y atención cuidadosa en cada detalle. Aquí preparamos ceviches con ingredientes de calidad y los servimos con pasión.
         </p>
+        
         <div class="cards">
           <article class="card dark-card">
-            <div class="icon-box">✦</div>
+            <div class="icon-box">🍋</div>
             <h3>Ingredientes frescos</h3>
-            <p>Salmón, camarón ecuatoriano, almejas y mariscos de calidad.</p>
+            <p>Salmón, camarón ecuatoriano, almejas y mariscos seleccionados diariamente para garantizar el mejor sabor y textura.</p>
           </article>
+          
           <article class="card dark-card">
-            <div class="icon-box">✦</div>
+            <div class="icon-box">🔥</div>
             <h3>Preparación al momento</h3>
-            <p>Cada ceviche se prepara cuando lo pides para garantizar máxima frescura y sabor.</p>
+            <p>Cada ceviche se prepara cuando lo pides. Así mantenemos la frescura, el cítrico vibrante y los sabores equilibrados.</p>
           </article>
+          
           <article class="card dark-card">
-            <div class="icon-box">✦</div>
-            <h3>Porciones generosas</h3>
-            <p>Disponible en 500g y 1kg. Ideal para compartir o para comer solo.</p>
+            <div class="icon-box">🌶️</div>
+            <h3>Sabor que conquista</h3>
+            <p>Equilibrio perfecto entre acidez, picante a elección y la frescura del mar. Porciones generosas y llenas de carácter.</p>
           </article>
         </div>
       </div>
