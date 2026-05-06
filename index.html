@@ -317,11 +317,6 @@
     .dark-section .section-copy{
       color:rgba(255,255,255,.70);
     }
-   
-
-
-
-
     .cards{
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -398,9 +393,6 @@
       font-size:1.2rem;
     }
 
-
-
-    
     .menu-item{
       display:flex;
       justify-content:space-between;
@@ -531,6 +523,35 @@
       color:var(--muted);
       font-size:.95rem;
     }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 64px;
+      height: 64px;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+    .whatsapp-float:hover {
+      background: #1fbe5d;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+      color: #fff;
+      text-decoration: none;
+    }
+
     @media (max-width: 980px){
       .hero-grid,
       .cards,
@@ -550,6 +571,13 @@
       }
       .hero-bottom{
         grid-template-columns:1fr;
+      }
+      .whatsapp-float {
+        width: 56px;
+        height: 56px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 26px;
       }
     }
   </style>
@@ -643,10 +671,6 @@
         </div>
       </div>
     </section>
-
-
-
-
 
          <section id="menu">
       <div class="container">
@@ -772,12 +796,6 @@
       </div>
     </section>
 
-
-
-
-
-    
-
     <section>
       <div class="container split">
         <div class="photo-panel">
@@ -842,5 +860,10 @@
       Ceviches Osorno · Rene Schneider esquina con San Martín
     </div>
   </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/56931837886" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Ceviches Osorno">
+    💬
+  </a>
 </body>
 </html>
